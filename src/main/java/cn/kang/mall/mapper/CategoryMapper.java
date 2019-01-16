@@ -1,5 +1,7 @@
 package cn.kang.mall.mapper;
 
+import java.util.List;
+
 import cn.kang.mall.entiy.Category;
 
 public interface CategoryMapper {
@@ -14,4 +16,6 @@ public interface CategoryMapper {
     int updateByPrimaryKeySelective(Category record);
 
     int updateByPrimaryKey(Category record);
+
+	List<Category> selectCategoryChildrenByParentId(Integer pagentId);
 }

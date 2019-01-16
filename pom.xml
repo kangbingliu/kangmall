@@ -18,10 +18,12 @@
   
   
   <dependencies>
+  <!--  -->
   	<dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-servlet-api</artifactId>
       <version>7.0.64</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -272,7 +274,7 @@
                 <version>2.1</version>
                 <configuration>
                     <port>8080</port>
-                    <path>/mmall</path>
+                    <path>/</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <finalName>mmall</finalName>
                     <server>tomcat7</server>
