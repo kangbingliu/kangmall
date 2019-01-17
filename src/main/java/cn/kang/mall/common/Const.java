@@ -15,7 +15,11 @@ public class Const {
 
     public static final String EMAIL = "email";
     public static final String USERNAME = "username";
-
+    
+    public interface RedisCacheExtime{
+        int REDIS_SESSION_EXTIME = 60 * 30;//30分钟
+    }
+    
     public interface ProductListOrderBy{
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc","price_asc");
     }
@@ -31,6 +35,10 @@ public class Const {
     public interface Role{
         int ROLE_CUSTOMER = 0; //普通用户
         int ROLE_ADMIN = 1;//管理员
+    }
+    
+    public interface REDIS_LOCK{
+    	String CLOSE_ORDER_TASK_LOCK = "redis_lock_schedual_key";
     }
 
     public enum ProductStatusEnum{
